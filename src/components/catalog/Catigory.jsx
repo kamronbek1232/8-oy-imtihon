@@ -1,4 +1,9 @@
 import React from "react";
+import img240 from "../../../public/240.png"
+import phototo from "../../../public/Phtoto.png"
+import photo1 from "../../../public/Photo1.png"
+import photo3 from "../../../public/Photo3.png"
+import photo4 from "../../../public/Photo4.png"
 
 const Catigory = () => {
   
@@ -9,7 +14,7 @@ const Catigory = () => {
         <div className="flex flex-col h-full justify-between  w-full col-span-1">
           <div className="mb-3 flex flex-col justify-between h-full pt-3 rounded-xl items-center bg-white">
             <img
-              src="../../../public/240.png"
+              src={img240}
               alt="img"
               className="rounded-t-xl h-[80%]"
             />
@@ -21,7 +26,7 @@ const Catigory = () => {
         <div className="flex flex-col col-span-1 md:col-span-2 lg:col-span-1 justify-between w-full">
           <div className="mb-7 flex flex-col justify-between h-[48%] rounded-xl items-center pt-3 bg-white">
             <img
-              src="../../../public/Phtoto.png"
+              src={phototo}
               alt="img"
               className="rounded-t-xl h-[80%] pb-2"
             />
@@ -31,7 +36,7 @@ const Catigory = () => {
           </div>
           <div className="flex flex-col justify-between h-[48%] rounded-xl items-center bg-white pt-3">
             <img
-              src="../../../public/Photo1.png"
+              src={photo1}
               alt="img"
               className="rounded-t-xl h-[80%]"
             />
@@ -43,7 +48,7 @@ const Catigory = () => {
         <div className="flex flex-col justify-between w-full col-span-1">
           <div className="mb-7 flex flex-col justify-between h-[48%] rounded-xl items-center pt-3 bg-white">
             <img
-              src="../../../public/Photo3.png"
+              src={photo3}
               alt="img"
               className="rounded-t-xl h-[80%]"
             />
@@ -53,7 +58,7 @@ const Catigory = () => {
           </div>
           <div className="flex flex-col justify-between h-[48%] rounded-xl items-center bg-white pt-3">
             <img
-              src="../../../public/Photo4.png"
+              src={photo4}
               alt="img"
               className="rounded-t-xl h-[80%]"
             />
