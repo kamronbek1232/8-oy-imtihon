@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+    background-color: #F8F7F3;
+
+}
+
+.container{
+    max-width: 1310px;
+    margin: 0 auto;
+    background-color: transparent;
+    padding: 0 20px;
+}
+
+div, p, h1, h2, h3, h4, h5, h6, ul, ol, li, header,img, footer, section, article, aside, main, nav, form, table{
+    background-color: transparent;
+}
+
+.custom-scrollbar {
+    overflow-y: scroll;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+    display: none; 
+}
+
+.custom-scrollbar {
+    scrollbar-width: none; 
+}
+
+
+.custom-scrollbar {
+    -ms-overflow-style: none; 
+}
+
+
+/* Toggle Button Styles */
+#menuToggle {
+  display: block;
+  position: relative;
+  z-index: 1;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle input {
+  display: none;
+}
+
+.toggle {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 24px;
+  height: 18px;
+  cursor: pointer;
+}
+
+.bar {
+  width: 24px;
+  height: 2px;
+  background-color: #000;
+  transition: all 0.3s ease-in-out;
+}
+
+.bar--top {
+  transform-origin: top left;
+}
+
+.bar--middle {
+  opacity: 1;
+}
+
+.bar--bottom {
+  transform-origin: bottom left;
+}
+
+#menuToggle input:checked ~ .toggle .bar--top {
+  transform: rotate(45deg);
+  background-color: black;
+}
+
+#menuToggle input:checked ~ .toggle .bar--middle {
+  opacity: 0;
+}
+
+#menuToggle input:checked ~ .toggle .bar--bottom {
+  transform: rotate(-45deg);
+  background-color: black;
+}
